@@ -1,22 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Aug 31 15:05:17 2017
-
-@author: Floor
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Aug 10 21:13:55 2017
-LOOP 
-@author: Floor
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Aug 10 19:13:38 2017
-
-@author: Floor
 """
 
 # -*- coding: utf-8 -*-
@@ -39,7 +20,7 @@ N_ini_ref = 100 #building up Nini
 N_ref1 = 80 #Building up IS 
 N_ref2 = 10 #building up IS2
 N_ini_number_ones_to_stop = 30 #sample initially MC until we have this number of succeses
-f_prior = (0.5)**d 
+f_prior = (0.5)**dimension 
 alpha = 0.0051#0.5 #factor to lower cov such that more ones are created in refinement this is one of the parameters we have to tune
 #alpha is probably a factor of Nref1, Nini,         
 alpha2 = 0.007  
