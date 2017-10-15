@@ -86,14 +86,14 @@ def initial_sampling(N_ones_wanted_ini):
         for i in range(2):
 
             samples_ini_M1 =  multivariate_normal.rvs(mean = mean[i], cov = [800],size = 1) #np.random.uniform(7, 100,1) #  sampling_from_IMF(1) #change to IS: 
-            samples_ini_a = multivariate_normal.rvs(mean = mean_a[i], cov = [200],size = 1) 
+            samples_ini_a =  sampling_from_a(1) 
             samples_ini_q = sampling_from_q(1)
             
             M1_ini_all.append(samples_ini_M1)
             a_ini_all.append(samples_ini_a)
             q_ini_all.append(samples_ini_q)
             
-            if (samples_ini_M1 >100) or (samples_ini_M1 <7) or (samples_ini_a < ):
+            if (samples_ini_M1 >100) or (samples_ini_M1 <7):
                 count_outside_parameter_space_ini +=1
                 N_ini_all = N_ini_all + 1
                 print 'outside parameterspace', count_outside_parameter_space_ini, samples_ini_M1
